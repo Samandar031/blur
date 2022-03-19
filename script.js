@@ -17,11 +17,13 @@ let foiz = document.querySelector(".foiz");
 
 btn.addEventListener("click", function () {
   let t = setInterval(function () {
-    foiz.textContent = parseFloat(foiz.textContent) - 1;
+    foiz.textContent = parseFloat(foiz.textContent) + 1;
     let kamayuvchi = foiz.textContent;
 
     if (kamayuvchi == 100) {
       img.style.filter = `blur(1.1rem)`;
+    } else if (kamayuvchi == 90) {
+      img.style.filter = `blur(0.9rem)`;
     } else if (kamayuvchi == 80) {
       img.style.filter = `blur(0.8rem)`;
     } else if (kamayuvchi == 60) {
