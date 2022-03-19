@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+}
+
+img {
+  width: 710px;
+  height: 720px;
+  margin: 5px auto;
+  filter: blur(1rem);
+}
+
+.btn-foiz {
+  position: absolute;
+  padding: 10px;
+  bottom: 150px;
+  font-size: 25px;
+  font-weight: 650;
+  border-radius: 6px;
+}
+
+.btn {
+  background-color: aliceblue;
+  position: absolute;
+  padding: 10px;
+  bottom: 70px;
+  font-size: 25px;
+  font-weight: 650;
+  border-radius: 6px;
+}
