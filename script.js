@@ -19,9 +19,25 @@ btn.addEventListener("click", function () {
   let t = setInterval(function () {
     foiz.textContent = parseFloat(foiz.textContent) - 1;
     let kamayuvchi = foiz.textContent;
-    if (kamayuvchi == 0) {
+
+    if (kamayuvchi == 100) {
+      img.style.filter = `blur(1.1rem)`;
+    } else if (kamayuvchi == 80) {
+      img.style.filter = `blur(0.8rem)`;
+    } else if (kamayuvchi == 60) {
+      img.style.filter = `blur(0.6rem)`;
+    } else if (kamayuvchi == 40) {
+      img.style.filter = `blur(0.4rem)`;
+    } else if (kamayuvchi == 20) {
+      img.style.filter = `blur(0.2rem)`;
+    } else if (kamayuvchi == 10) {
+      img.style.filter = `blur(0.1rem)`;
+    } else if (kamayuvchi == 0) {
+      img.style.filter = `blur(0)`;
       clearTimeout(t);
-    } else if (kamayuvchi == 50) {
+    } else if (kamayuvchi < 0) {
+      clearTimeout(t);
     }
-  }, 100);
+    console.log(kamayuvchi);
+  }, 50);
 });
